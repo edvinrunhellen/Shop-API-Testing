@@ -124,4 +124,4 @@ A .NET Core Web API application for managing an online shop with products, categ
 1. Implement query execution abstraction for better code readability
 2. Remove redundant user ID parameters in favor of session-based identification
 3. Add email support for orders to accommodate guest purchases
-4. Refactor table creation logic into DatabaseSeeder class
+4. Refactor table creation logic into DatabaseSeeder class# Shop-API-Testing
