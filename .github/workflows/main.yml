@@ -1,0 +1,41 @@
+name: Newman - Postman Tests
+
+on:
+  workflow_dispatch:  # Möjliggör manuell körning av workflowet
+
+jobs:
+  postman-tests:
+    runs-on: ubuntu-latest  # Kör på en Ubuntu-miljö
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Hämtar koden från ditt repo
+
+      # 🔹 Installera .NET
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0'  # Ändra om du använder en annan version
+
+      # 🔹 Bygg .NET-projektet
+      - name: Build .NET project
+        run: |
+          cd server  # Navigera till mappen där API:t finns
+          dotnet restore  # Återställ beroenden
+          dotnet build --configuration Release  # Bygg projektet
+          dotnet run &  # Starta servern i bakgrunden
+
+      # 🔹 Installera Newman (Postman CLI)
+      - name: Install Newman
+        run: npm install -g newman  # Installerar Newman för att köra Postman-tester
+
+      # 🔹 Vänta lite så att servern startar
+      - name: Wait for API to be ready
+        run: sleep 10s  # Väntar 10 sekunder (justera vid behov)
+
+      # 🔹 Kör Postman Collection
+      - name: Run Postman Collection
+        uses: gasparhe/newman-action@1.0.0
+        with:
+          collection: server/APIcollection.json  # Din Postman-kollektion
+          environment: server/APIenvironment.json  # Din miljöfil (ändra om den heter något annat)
