@@ -1,0 +1,51 @@
+{
+	"id": "fd2ba7fd-50ca-468b-a133-8dc61f8e865f",
+	"name": "root",
+	"values": [
+		{
+			"key": "http://localhost:5000",
+			"value": "http://localhost:5000",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "root",
+			"value": "http://localhost:5000",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "category_id",
+			"value": "2",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "product_id",
+			"value": "1",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "curr_category_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "category",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "user_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-04-03T13:34:51.891Z",
+	"_postman_exported_using": "Postman/11.23.3"
+}
