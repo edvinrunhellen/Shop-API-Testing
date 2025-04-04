@@ -27,4 +27,4 @@ jobs:
       - name: Start Server
         run: cd server && nohup dotnet run &
       - name: Run API-tests
-        run: newman run /APIcollection.json -e APIenvironment.json
+        run: newman run ./APIcollection.json -e ./APIenvironment.json
