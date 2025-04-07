@@ -943,14 +943,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{root}}/api/user/7/orders",
+							"raw": "{{root}}/api/user/3/orders",
 							"host": [
 								"{{root}}"
 							],
 							"path": [
 								"api",
 								"user",
-								"7",
+								"3",
 								"orders"
 							]
 						}
