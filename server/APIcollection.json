@@ -989,14 +989,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{root}}/api/user/3/orders/1",
+							"raw": "{{root}}/api/user/7/orders/1",
 							"host": [
 								"{{root}}"
 							],
 							"path": [
 								"api",
 								"user",
-								"3",
+								"7",
 								"orders",
 								"1"
 							]
