@@ -943,14 +943,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{root}}/api/user/3/orders",
+							"raw": "{{root}}/api/user/7/orders",
 							"host": [
 								"{{root}}"
 							],
 							"path": [
 								"api",
 								"user",
-								"3",
+								"7",
 								"orders"
 							]
 						}
@@ -989,16 +989,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{root}}/api/user/7/orders/3",
+							"raw": "{{root}}/api/user/3/orders/1",
 							"host": [
 								"{{root}}"
 							],
 							"path": [
 								"api",
 								"user",
-								"7",
+								"3",
 								"orders",
-								"3"
+								"1"
 							]
 						}
 					},
